@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ceos</string>
+
+    <string name="castWarning">Please add another display</string>
+
+    <string-array name="changeRate">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>

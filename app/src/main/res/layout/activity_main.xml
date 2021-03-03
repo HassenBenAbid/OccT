@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2c2c2"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/menuTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/buttonLogMar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:elevation="10dp"
+                app:srcCompat="@mipmap/logmar_icon_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/buttonTumbling"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:elevation="10dp"
+                app:srcCompat="@mipmap/tumbling_icon_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/buttonLea"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/lea_icon_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/kidButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/kid_icon_foreground" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/buttonAstig"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:elevation="10dp"
+                app:srcCompat="@mipmap/astigmastism_icon_foreground" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/chartsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toEndOf="@+id/menuTable"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        tools:visibility="visible">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/singleletterButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/singleletter_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/uprowButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/up_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/refreshButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/refresh_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/plusButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/plus_icon_foreground" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/multipleletterButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/multipleletter_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/downRowButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/down_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/duochromeButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/duochrome_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/minusButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:srcCompat="@mipmap/minus_icon_foreground" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/displayWarning"
+        android:layout_width="354dp"
+        android:layout_height="152dp"
+        android:fontFamily="@font/optician_sans"
+        android:text="@string/castWarning"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        tools:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/castButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        app:srcCompat="@mipmap/cast_icon_foreground" />
+
+    <TableRow
+        android:id="@+id/viewScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="@+id/tableRow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tableRow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/viewLetter1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/c_letter" />
+
+        <ImageView
+            android:id="@+id/viewLetter2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/c_letter" />
+
+        <ImageView
+            android:id="@+id/viewLetter3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/c_letter" />
+
+        <ImageView
+            android:id="@+id/viewLetter4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/c_letter" />
+
+        <ImageView
+            android:id="@+id/viewLetter5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/c_letter" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/displayWarning"
+        app:layout_constraintEnd_toEndOf="@+id/chartsMenu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/chartsMenu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">
+
+        <Button
+            android:id="@+id/distanceInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#314d5c"
+            android:elevation="20dp"
+            android:text="600 centimeters"
+            android:textColor="#c2c2c2" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/redSplit"
+        android:layout_width="282dp"
+        android:layout_height="412dp"
+        android:background="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/greenSplit"
+        android:layout_width="269dp"
+        android:layout_height="409dp"
+        android:background="#00ff00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/snellenFractionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6/6"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/SnellenLabel"
+        app:layout_constraintEnd_toEndOf="@+id/SnellenLabel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/SnellenLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/logMarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.4"
+        android:textAlignment="textEnd"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/LogMarLabel"
+        app:layout_constraintEnd_toEndOf="@+id/LogMarLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/LogMarLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/decimalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/decimalLabel"
+        app:layout_constraintEnd_toEndOf="@+id/decimalLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/decimalLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/SnellenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Snellen Fraction"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/LogMarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="LogMar"
+        android:textAlignment="textEnd"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SnellenLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/SnellenLabel"
+        app:layout_constraintTop_toBottomOf="@+id/snellenFractionValue"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/letter1"
+        android:layout_width="15.0mm"
+        android:layout_height="15.0mm"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/letter2"
+        app:layout_constraintEnd_toStartOf="@+id/letter2"
+        app:layout_constraintTop_toTopOf="@+id/letter2"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/d_letter" />
+
+    <ImageView
+        android:id="@+id/letter2"
+        android:layout_width="15.0mm"
+        android:layout_height="15.0mm"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/letter3"
+        app:layout_constraintEnd_toStartOf="@+id/letter3"
+        app:layout_constraintTop_toTopOf="@+id/letter3"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/h_letter" />
+
+    <ImageView
+        android:id="@+id/letter3"
+        android:layout_width="15.0mm"
+        android:layout_height="15.0mm"
+        app:layout_constraintBottom_toBottomOf="@+id/SnellenLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/d_letter" />
+
+    <ImageView
+        android:id="@+id/letter4"
+        android:layout_width="15.0mm"
+        android:layout_height="15.0mm"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/letter3"
+        app:layout_constraintStart_toEndOf="@+id/letter3"
+        app:layout_constraintTop_toTopOf="@+id/letter3"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/d_letter" />
+
+    <ImageView
+        android:id="@+id/letter5"
+        android:layout_width="15.0mm"
+        android:layout_height="15.0mm"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/letter4"
+        app:layout_constraintStart_toEndOf="@+id/letter4"
+        app:layout_constraintTop_toTopOf="@+id/letter4"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/d_letter" />
+
+    <TextView
+        android:id="@+id/decimalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Decimal"
+        android:textAlignment="textEnd"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SnellenLabel"
+        app:layout_constraintEnd_toStartOf="@+id/SnellenLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snellenFractionValue"
+        app:layout_constraintVertical_bias="0.78" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

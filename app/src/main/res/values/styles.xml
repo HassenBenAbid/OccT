@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#314d5c</item>
+        <item name="android:spinnerDropDownItemStyle">@style/centerSpinner</item>
+        <item name="android:alertDialogTheme">@style/dialogStyle</item>
+    </style>
+
+    <style name="centerSpinner">
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#314d5c</item>
+        <item name="windowMinWidthMajor">20%</item>
+        <item name="windowMinWidthMinor">20%</item>
+    </style>
+
+</resources>
